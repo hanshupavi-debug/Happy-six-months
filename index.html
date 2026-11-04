@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy 6 months</title>
+  <meta name="theme-color" content="#04060a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <!-- Password gate (client-side only, not real security) -->
+  <div id="gate">
+    <div class="gate-box">
+      <div class="lock-ring" aria-hidden="true"><span></span></div>
+      <h1>A little surprise for you, My dear Tarun💙</h1>
+      <p class="sub">Something I've made just for you.</p>
+      <form id="gate-form" autocomplete="off">
+        <input id="pw" type="password" inputmode="numeric" placeholder="Password" aria-label="Password" autofocus>
+        <button type="submit" class="btn">Enter</button>
+      </form>
+      <p id="gate-msg" class="gate-msg" role="alert"></p>
+    </div>
+  </div>
+
+  <main id="site" hidden>
+    <section class="hero" id="top">
+      <div class="moon" aria-hidden="true"></div>
+      <h1 class="hero-title">Six Months of Us</h1>
+      <p class="hero-sub">To my favourite person, Tarun 💙</p>
+      <p class="hero-line">A little something, made with lots of love.</p>
+      <a href="#letter" class="btn" id="open-btn">Open your little surprise</a>
+      <div class="scroll-cue" aria-hidden="true"><span></span></div>
+    </section>
+
+    <section class="block" id="letter">
+      <article class="card reveal">
+        <h2>A little note for you...</h2>
+        <p>Happy 6 months, my dearest Idiot.</p>
+        <p>I'm so happy to have you in my life. You have become such an important part of my everyday life, and even the smallest conversations with you mean so much to me.</p>
+        <p>Thank you for being you and for making these six months so special.</p>
+        <p>I hope we get to meet soon and finally create all those little memories we've been waiting for.</p>
+      </article>
+    </section>
+
+    <section class="block time-counter" id="time-counter" aria-labelledby="counter-heading">
+      <article class="time-counter-card reveal">
+        <h2 id="counter-heading">Since the day our paths crossed...</h2>
+        <p class="counter-date">5 May 2026</p>
+        <div class="counter-grid" aria-live="off">
+          <div class="counter-unit"><span class="counter-value" id="counter-days">0</span><span class="counter-label">Days</span></div>
+          <div class="counter-unit"><span class="counter-value" id="counter-hours">00</span><span class="counter-label">Hours</span></div>
+          <div class="counter-unit"><span class="counter-value" id="counter-minutes">00</span><span class="counter-label">Minutes</span></div>
+          <div class="counter-unit"><span class="counter-value" id="counter-seconds">00</span><span class="counter-label">Seconds</span></div>
+        </div>
+        <p class="counter-subtitle">And counting... 💙</p>
+      </article>
+    </section>
+
+    <section class="block open" id="mean">
+      <h2 class="reveal">You mean more to me than you know.</h2>
+      <p class="reveal">You're someone I never expected to become this important to me, but somehow, you did.</p>
+      <p class="reveal">You've become a beautiful part of my everyday life, my happiness and someone I always look forward to talking to.</p>
+      <p class="reveal">Even from a distance, you've made me feel so many beautiful things.</p>
+      <p class="reveal">I hope you never doubt how special you are to me. I appreciate you more than I can explain, and I'm genuinely grateful that I have you in my life.</p>
+    </section>
+
+    <section class="block open future" id="future">
+      <h2 class="reveal">If there's one thing I want you to know...</h2>
+      <p class="reveal">Even if we don't have a future together, please know that what you mean to me will never become any less special.</p>
+      <p class="reveal">You're someone I never expected to become this important to me, but somehow, you did. You've become such a beautiful part of my life, my everyday happiness and someone I'll always hold close to my heart.</p>
+      <p class="reveal">I don't know how long life will let us be together, but I know that I'll cherish you, our little moments and everything we've shared for a very long time.</p>
+      <p class="reveal strong">No matter where life takes us, you'll always be my favourite person. And I'll always have so much love for you, Tarun.</p>
+    </section>
+
+    <section class="block surprise" id="surprise">
+      <button class="btn" id="last-btn" aria-expanded="false" aria-controls="last-msg">One last thing... 💙</button>
+      <div id="last-msg" class="last-msg" aria-live="polite">
+        <p>I really hope we get to meet soon. Until then, please take care of yourself and never forget how special you are to me.</p>
+        <p>Love you to the moon and back, and I'm so glad I get to call you mine. 💙</p>
+      </div>
+    </section>
+
+    <section class="block final" id="final">
+      <svg class="heart reveal" viewBox="0 0 32 29" aria-hidden="true">
+        <path d="M23.6 0c-3.4 0-6.3 2.7-7.6 5.6C14.7 2.7 11.8 0 8.4 0 3.8 0 0 3.8 0 8.4c0 9.4 9.5 11.9 16 19.5 6.1-7.6 16-10.1 16-19.5C32 3.8 28.2 0 23.6 0z"/>
+      </svg>
+      <h2 class="reveal">Happy 6 Months to US</h2>
+      <p class="reveal">Here's to all the little moments, endless conversations and everything that makes us US.</p>
+      <p class="made reveal">With all my love, your baby girl. 💙</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
